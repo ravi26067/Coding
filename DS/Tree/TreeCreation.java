@@ -69,15 +69,56 @@ public class TreeCreation{
 		}
 	}
 	
+	void delete(int key) {
+		root = deletere(root,key);
+	}
+	
+	Node deletere(Node root, int key) {
+		
+		if(root == null)
+			return root;
+		else if (root.data > key){
+			root.left = deletere(root.left, key);
+		}
+		else if(root.data < key) {
+			root.right = deletere(root.right, key);
+		}
+		else {
+			//leaf node or no node
+			if(root.left == null)
+				return root.right;
+			else if (root.right == null)
+				return root.left;
+			else {
+				root.data = minVal(root.right);
+				root.right = deletere(root.right, key);
+			}
+		}
+		
+		return root;
+	}
+	
+	int minVal(Node root) {
+		int minv = root.data;
+		while(root.left!=null) {
+			minv = root.left.data;
+			root = root.left;
+		}
+		return minv;
+	}
+	
 	public static void main(String[] args) {
 		TreeCreation bst = new TreeCreation();
 		bst.insert(3);
 		bst.insert(5);
-		bst.inorder();
 		bst.insert(8);
 		bst.insert(2);
-		bst.inorder();
+		bst.insert(9);
+		bst.insert(13);
 		bst.preorder();
+		bst.inorder();
 		bst.postorder();
+		bst.delete(3);
+		bst.inorder();
 	}
 }
