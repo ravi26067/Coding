@@ -1,7 +1,11 @@
 import java.util.Comparator;
 import java.util.TreeSet;
 
+import java.util.Comparator;
+import java.util.TreeSet;
+
 public class TreeSetClass {
+
 	
 	public static void main(String[] args) {
 		/*by default it will call compareTo() but when we pass MyComparator as parameter in constructor it will call compare method.
@@ -29,11 +33,26 @@ class MyComparator implements Comparator{
 		Integer I1 = (Integer) o1;
 		Integer I2 = (Integer) o2;
 		
+		//return -I1.compareTo(I2);
+		
+		
+		//return +1000;
+		
 		if(I1< I2)
 			return 1;
 		else if(I1>I2)
 			return -1;
 		else return 0;
+		
+		/*Various possible implementations inside compare method
+		 * return I1.compareTo(I2) increasing order
+		 * return I2.compareTo(I1) decreasing order
+		 * return -I1.compareTo(I2) decreasing
+		 * return -I2.compareTo(I1) increasing
+		 * return +1 same order of insertion
+		 * return -1 reverse of order of insertion
+		 * return 0 only one element as it will treat all objects same
+		saa*/
 	}
 	
 }
