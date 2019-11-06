@@ -2,10 +2,12 @@ import java.util.Comparator;
 import java.util.TreeSet;
 
 public class TreeSetClass {
-
-	//by default it will call toCompare() but when we pass MyComparator as parameter in constructor it will call compare method.
 	
 	public static void main(String[] args) {
+		/*by default it will call compareTo() but when we pass MyComparator as parameter in constructor it will call compare method.
+		if we not passing comparator object , the JVM will call compareTo() which is meant for default natural sorting order.In this 
+		After we pass the comparator object the JVM will call compare mehtod meant for customized sorting.
+		*/
 		TreeSet<Integer> k = new TreeSet<>(new MyComparator());
 		k.add(12); 
 		k.add(67); // compare(67,12) returns -ve -> compare each element with root 
