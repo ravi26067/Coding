@@ -1,4 +1,3 @@
-package queue;
 
 import java.util.EmptyStackException;
 import java.util.LinkedList;
