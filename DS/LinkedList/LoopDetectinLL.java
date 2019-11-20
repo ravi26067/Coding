@@ -1,4 +1,3 @@
-package linkedLists;
 
 /**
  *	Class to detect and remove loop in linked list
