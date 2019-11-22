@@ -1,7 +1,3 @@
-/*package whatever //do not write package name here */
-
-import java.io.*;
-
 public class TreeNodeDistance {
     
     Node root;
@@ -74,6 +70,24 @@ public class TreeNodeDistance {
         return (findLevel(n1)+findLevel(n2)) - (2* findLevel(findLca(n1,n2).data));
     }
     
+    int distanceBW(Node root,int n1,int n2) {
+    	return distanceOfNode(root, n1)+ distanceOfNode(root, n2) - 2*(distanceOfNode(root, findLca(n1, n2).data));
+    }
+    
+    static int distanceOfNode(Node root,int x) {
+    	if(root==null)
+    		return -1;
+    	
+    	int dist = -1;
+    	
+    	if(root.data == x ||
+    			(dist= distanceOfNode(root.left, x))>=0 ||
+    			(dist= distanceOfNode(root.right, x))>=0) 
+    		return dist + 1;
+    	
+    	return dist;
+    }
+    
 	public static void main (String[] args) {
 		TreeNodeDistance tree = new TreeNodeDistance();
 		tree.root = new Node(3);
@@ -90,5 +104,6 @@ public class TreeNodeDistance {
 		Node lca = tree.findLca(12,9);
 		System.out.println("LCA for given nodes:"+lca.data);
 		System.out.println("Distance between two nodes: "+ tree.distance(2,7));
+		System.out.println("Distance between two nodes using new method: "+ tree.distanceBW(tree.root, 2, 7));
 	}
 }
