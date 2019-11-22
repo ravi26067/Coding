@@ -1,7 +1,3 @@
-
-import java.util.LinkedList;
-import java.util.Queue;
-
 /**
  * Height of tree without recursion
  * 1. Take empty queue and push root
@@ -11,7 +7,7 @@ import java.util.Queue;
  * 		b. while nodecount>0 i.e queue has elements(current level count) : pop and make it as curr node and keep pushing the left and right of curr node 
  * 			element of queue to stack if not null and decrease nodecount by 1
  */
-public class HeightIterative {
+public class Height {
 
 	static class Node{
 		int val;
@@ -23,6 +19,20 @@ public class HeightIterative {
 			left = null;
 			right = null;
 		}
+	}
+	
+	
+	
+	static int heightRec(Node root) {
+		
+		if(root==null)
+			return -1;
+		
+		int lheight = heightRec(root.left)+1;
+		int rheight = heightRec(root.right)+1;
+		
+		return (lheight>rheight)?lheight:rheight;
+		
 	}
 	
 	static int height(Node root) {
@@ -65,5 +75,6 @@ public class HeightIterative {
 		root.right.right = new Node(11);
 		root.right.right.left = new Node(10);
 		System.out.println("Height of tree is: "+height(root));
+		System.out.println("Height of tree using recursion: "+ heightRec(root));
 	}
 }
