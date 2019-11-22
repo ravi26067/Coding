@@ -30,6 +30,7 @@ public class NonSibling {
 		else if(root.right!=null)
 		{
 			System.out.print(root.right.data + " ");
+			printNonSibling(root.right);
 		}
 		
 		
