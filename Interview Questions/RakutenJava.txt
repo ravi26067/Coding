@@ -1,0 +1,35 @@
+1.Contract between equals and hashcode
+2.Exception during overriding
+3.Number format exception
+4.Intersection of two linked lists (using some data structure)
+5.
+parent
+Void m1();
+child
+Void m1() throws RunTimeException
+Will this throw error or not
+6.
+
+Try {
+Throw new ArrayIndexoutofBoundExpection()
+
+}
+catch(NmberFormatExpection e){
+
+}
+catch(Exception e) {
+
+}
+catch(ArrayIndexoutofBoundExpection a){
+}
+7. Comparator and comparable, how it works in case of sorting
+8. Hashmap internal structure and how equals works in hashmap  (hashcode and equals scenario)
+9. Find the next smallest number
+	876
+	867
+	12354
+	12345
+10. How tree map works
+11. Design patterns
+12. How autowiring works in spring.
+13. How to sort a list in java, how do we use comparator in that.
