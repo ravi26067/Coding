@@ -1,16 +1,24 @@
 # Coding
 This module consists of various sections related to programming as well as for interview preparation. All programs are implemented in Java and c++.
 * [Algorithms](#algorithms)
-* [Cpp](#cpp)
+* [Interview](#interview)
 * [DS](#ds)
 * [Java](#java)
 * [coding](#coding-problems)
 
 # Algorithms
-* [Algorithms](https://github.com/ravi26067/Coding/tree/master/Algorithms )
+|        Topic        |   Problem Statement     |   Solution  |
+|:------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------:|:------:|
+|DP|    Fabonacci series.                                                      |   [FabonacciNumber.java](https://github.com/ravi26067/Coding/blob/master/Algorithms/DP/FabonacciNumber.java "FabonacciNumber.java")   |
+|DP|    0-1 Knapsack problem .                                                      |   [KnapsackDp.java](https://github.com/ravi26067/Coding/blob/master/Algorithms/DP/KnapsackDp.java)   |
+|DP|    Longest common sub sequence.                                                      |   [LongestCommonSubsequence.java](https://github.com/ravi26067/Coding/blob/master/Algorithms/DP/LongestCommonSubsequence.java)   |
+|DP|    Longest increasing sub sequence.                                                      |   [LongestIncreasingSubsequence.java](https://github.com/ravi26067/Coding/blob/master/Algorithms/DP/LongestIncreasingSubsequence.java)   |
+* [more](https://github.com/ravi26067/Coding/tree/master/Algorithms )
 
-# Cpp
-* [Cpp](https://github.com/ravi26067/Coding/tree/master/Cpp/DS/Tree "This path skips through empty directories")
+# Interview
+|        Company        |   Questions     |   
+|:------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------:|
+|[Rakuten](https://jp.linkedin.com/company/rakuten?trk=guest_job_details_topcard_logo)| [RakutenJava.txt]([https://github.com/ravi26067/Coding/blob/master/Interview%20Questions/RakutenJava.txt)|
 
 # DS
 |        Topic        |   Problem Statement     |   Solution  |
@@ -27,7 +35,7 @@ This module consists of various sections related to programming as well as for i
 |LinkedList| Program to convert binary linked list to decimal equivalent.|[ConvertBinary.java](https://github.com/ravi26067/Coding/blob/master/DS/LinkedList/ConvertBinary.java)|
 |LinkedList| Program to divide odd nodes on one side and even on another side.|[EvenOdd.java](https://github.com/ravi26067/Coding/blob/master/DS/LinkedList/EvenOdd.java)|
 
-* [DS](https://github.com/ravi26067/Coding/tree/master/DS "DS")
+* [more](https://github.com/ravi26067/Coding/tree/master/DS "DS")
 
 
 # Java
@@ -35,4 +43,8 @@ This module consists of various sections related to programming as well as for i
 
 
 #  Coding problems
-* [coding](https://github.com/ravi26067/Coding/tree/master/coding "coding")
+|        Topic        |   Problem Statement     |   Solution  |
+|:------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------:|:------:|
+|Logical| Write a program to check if the given integer is palindrome or not.                                                      |   [PalindromeInteger.java](https://github.com/ravi26067/Coding/blob/master/coding/PalindromeInteger.java)   |
+|HackerRank| [Possible path problem hackerrank]([https://www.hackerrank.com/challenges/possible-path/problem)                                                   |   [PalindromeInteger.java](https://github.com/ravi26067/Coding/blob/master/coding/PalindromeInteger.java)   |
+* [more](https://github.com/ravi26067/Coding/tree/master/coding "coding")
