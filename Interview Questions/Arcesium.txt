@@ -1,0 +1,35 @@
+Arsesium Interview Question
+
+Round 1:
+1.Given an array {8,1,2,2,3} print/return a list/array {4,0,1,1,3} which contain output as number of elements strictly less then current element.
+2.Given a string , return index of first non repeating character in string. eg- vovels , op - 1
+3.Given a binary tree complete the below method to print reverse level order traversal
+	List<List<integers> reverseOrder(TreeNode root){....}
+	
+Round 2:
+1. ACID properties in database.
+2. Singleton class in java, is it thread safe?
+eg:
+class Singleton{
+	
+  private static Singleton instance = null;
+  
+  private Singleton(){
+  	System.out.println("This is singleton class");
+  }
+  
+  public static Singleton getInstance(){
+  
+  	if(instance == null)
+    	instance = new Singleton();
+  
+  	return instance;
+  }
+
+}
+3. Java 8 new features.
+4. Given paths below in the format of x,y and d, and value k , find path between x,y where distance d <=k
+A B 2
+B c 4
+C D 5
+A C 3
