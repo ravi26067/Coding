@@ -1,0 +1,12 @@
+Syncron Interview Questions
+----------------------------
+1. Tell me about your role 
+2. Tell me about OOPS concepts in Java(Where did u used it in your project.)
+3. What are types of polymorphism
+4. Difference between abstract class and Interface. Which is preffered?
+5. We have Object class which is superclass of every class and we have class A which inherits class B. Now how it will work.(Multilevel inheritence)
+6. What is the significance of hashcode and equals methods in Object class. Explain.
+7. Class A (x=1,y=2) , Class B (x=1,z=2). I have to make the hashcode of these class equal so how it can be done? Ans:Override hashcode method.
+8. Explain how hashmap internally works. KV(a,1),(b,2),(a,3) -> how it will get stored.
+9. I have input streams of numbers and I want to maintain the order of i/p stream and also i want the search complexity O(log n). Which library or 
+	DS can we use.
