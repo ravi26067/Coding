@@ -1,0 +1,17 @@
+Oracle interview questions:
+1.Rotate an array by n without using extra memory.
+2. Given versions eg:
+  1.2.0
+  1.2.0.1
+  4.2.0
+  4.2.0.0.0
+  Write a method to compare version such that it will return 0 when both versions are equal, 1 if v1>v2 and -1 when v2>v1.
+
+3. Given array of strings eg:
+  helloworld
+  helloindia
+  alphabet1234
+  alphabet456
+  gooditem
+  goodboy
+  Write a method which returns longest prefix i.e alphabet. Other prefix are hello and good.
