@@ -1,0 +1,12 @@
+Capillary Technologies
+
+1. Explain the contract between equals and hashcode.
+2. Internal structure of Hashmap (how hashcode is claculated and how equals works here).
+3. How we can write down the logs using multithreading
+4. Write the code to print a binary tree in spiral form.
+5. Difference between arraylist and linkedlist.
+6. Write a code to implement a queue using 2 stacks.
+7. Reverse a string using recurssion.
+8. Java design patterns.
+9. Singleton class (implementation).
+10. Dependency injection in spring and how sping is beneficial.
