@@ -6,7 +6,8 @@ import java.util.Stack;
 
 /**
  * @author ravik
- * Here we are using stack data structure to store the index of prizes in decreasing order.
+ * Here we are using stack data structure to store the index of prices in decreasing order of their respective values. We are also maintaining List to store the 
+ * prices so that we can compare current price with the price of peek.
  */
 class StockSpanner {
 
