@@ -18,6 +18,12 @@ class TreeNode {
 	}
 }
 
+/**
+ * @author ravik
+ * We have to find the kth smallest element in the binary search tree. Here we will use inroder traversal as it will give us the data in increasing order for BST.
+ * We will take an array nums to store the index and data for the inorder travarsal value. When index will be equal to k then we will return nums[1].
+ */
+
 public class KthSmallestTree {
 
 	public int kthSmallest(TreeNode root, int k) {
