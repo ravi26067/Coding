@@ -4,6 +4,13 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
+
+/**
+ * @author ravik
+ * Here we have created one class with frequency and letter as fields. First we will do hashing in array which will store the frequency at ASCII position in array.
+ * We will then iterate over that array(hashed) and store character & it's frequency in the list of Frequency class. We will sort the List in descending order based 
+ * on frequency field using comparator. 
+ */
 public class CharacterFrequency {
 	
 	
