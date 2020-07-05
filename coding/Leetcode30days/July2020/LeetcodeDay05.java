@@ -1,3 +1,6 @@
+/**
+ * Here we are doing xor operation bitwise and adding it to the counter.
+ */
 class Solution {
     public int hammingDistance(int x, int y) {
 		
