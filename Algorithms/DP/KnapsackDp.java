@@ -6,6 +6,7 @@ public class KnapsackDp {
     int max(int a,int b){
         return a>b?a:b;
     }
+	
     
     public int knapsack(int W,int w[],int v[],int n){
         
