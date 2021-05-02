@@ -1,3 +1,7 @@
+/**
+Here this problem comes under unbounded knapsack.
+We just need to initialize the dp array. if set is empty and we have some amount then it will be infinite times , also if we have amount 0, then there is 0 ways.
+*/
 class Solution {
     int dp[][];
     public int coinChange(int[] coins, int amount) {
