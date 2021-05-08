@@ -1,5 +1,5 @@
 # **Dynamic Programming (LCS problems)**
-## Some useful facts
+## Must read before you start
 We are mostly given two string and we need to find LCS. LCS stands for Largest Common Subsequence. 
 Some question contains single string, where we have to find LPS (Longest Palindromic Subsequence). 
 To calculate that we reverse first string and then apply LCS logic there. There are just small variations in these questions.
