@@ -3,7 +3,8 @@
 We are mostly given two string and we need to find LCS. LCS stands for Largest Common Subsequence. 
 Some question contains single string, where we have to find LPS (Longest Palindromic Subsequence). 
 To calculate that we reverse first string and then apply LCS logic there. There are just small variations in these questions.
-In these problems, we can't use two pointer approach as to use two pointer approach one string should be LCS of other.
+In these problems, we can't use two pointer approach as to use two pointer approach one string should be LCS of other. 
+**Note** : You can click on question name to navigate to question link and click on solution name to get naviagted to solution.
 
 |   Problem Statement     |   Solution  |
 |:-------------------------------------------:|:------:|
