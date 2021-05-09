@@ -22,6 +22,28 @@ Min Heap is built on the Min Heap property, and Max Heap is implemented on the M
 This property states that all the parent node keys must be greater than or equal to their child node keys. So the root node, in this case, will always contain the largest element present in the Heap. If Node A has a child node B, then,
 
 <p align=center>
-  key(A) >= key(B)key(A)>=key(B)
+  key(A) >= key(B)
 </p>
 
+<p align=center>
+  <img width=550 height=300 src="https://github.com/ravi26067/Coding/blob/master/DS/Heap/source/maxHeap.png">
+</p>
+
+## Min Heap property #
+In Min Heap, all the parent node keys are less than or equal to their child node keys. This goes without saying that the rule will apply to all children of the node. So the root node, in this case, will always contain the smallest element present in the Heap. If Node A has a child node B, then,
+
+<p align=center>
+  key(A)<=key(B)
+</p>
+  
+<p align=center>
+  <img width=500 height=300 src="https://github.com/ravi26067/Coding/blob/master/DS/Heap/source/minnHeap.png">
+</p>
+
+## Operations #
+Following operations can be performed on a heap:
+
+* Insertion: It has O(log(n))O(log(n)) time complexity.
+* Remove min/max: It has O(1)O(1) time complexity.
+
+In each of the following lessons, you will tackle problems involving binary heaps. Check the implementation approach used in the lesson and write your solution accordingly.
