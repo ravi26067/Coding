@@ -176,7 +176,7 @@ The while loop makes sure that the nodes keep swapping until the Heap property i
 
 ### If this Code had a Face #
 <p align=center>
-  <img width=700 height=550 src="https://github.com/ravi26067/Coding/blob/master/DS/Heap/source/output_GueqZG.gif">
+  <img width=800 height=550 src="https://github.com/ravi26067/Coding/blob/master/DS/Heap/source/output_GueqZG.gif">
 </p>
 
 ## Time Complexity #
