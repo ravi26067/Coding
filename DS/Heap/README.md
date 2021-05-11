@@ -5,7 +5,7 @@
 * [2.1 Max Heap Property:](#max-Heap-property)
 * [2.2 Min Heap Property:](#min-Heap-property)
 * [3. Heap Representation in Arrays](#Heap-Representation-in-Arrays)
-* [4. Implementation](#Implementation)
+* [4. Heap Implementation](#Heap-implementation)
 * [4.1 Explanation](#explanation)
 * [4.2 Complexity](#Complexity)
 ## What is a Heap
@@ -113,7 +113,7 @@ In the figure above, you can see that all of the parent nodes are present in the
 
 In the next chapter, we will take a detailed look at Max Heap and see how it is different from Min Heap.
 
-## Implementation #
+## Heap Implementation #
 Now that we have discussed the important Max Heap functions, let’s move on to implementing them in Java.
 
 ```
