@@ -2,8 +2,8 @@
 * [Introduction](#Introduction)
 * [1. Complete Binary Tree](#complete-Binary-Tree)
 * [2. Heap Property](#heap-property)
-* [2.1 Max Heap Property:](#2.1 max-Heap-property)
-* [2.2 Min Heap Property:](#2.2 min-Heap-property)
+* [2.1 Max Heap Property:](#max-Heap-property)
+* [2.2 Min Heap Property:](#min-Heap-property)
 * [3. Heap Representation in Arrays](#Heap-Representation-in-Arrays)
 ## What is a Heap
 A brief introduction to Heaps and their uses. We will also look at Heap Property and how a Heap is represented on an array.
@@ -44,7 +44,7 @@ All the nodes are ordered according to the rules listed below:
 * A Heap tree must be a Complete Binary Tree.
 * The nodes must be ordered according to the Heap Property.
 
-## 2. Heap property #
+##  Heap property #
 A heap is built, based on the Heap property, by comparing the parent node key with its child node keys. This comparison is done based on the heap property. The two heap structures that we are going to cover in this chapter are:
 
 * Min Heap
@@ -52,7 +52,7 @@ A heap is built, based on the Heap property, by comparing the parent node key wi
 
 Min Heap is built on the Min Heap property, and Max Heap is implemented on the Max Heap property. Let’s see how they are different.
 
-## 2.1 Max Heap property #
+##  Max Heap property #
 This property states that all the parent node keys must be greater than or equal to their child node keys. So the root node, in this case, will always contain the largest element present in the Heap. If Node A has a child node B, then,
 
 <p align=center>
@@ -63,7 +63,7 @@ This property states that all the parent node keys must be greater than or equal
   <img width=550 height=300 src="https://github.com/ravi26067/Coding/blob/master/DS/Heap/source/maxHeap.png">
 </p>
 
-## 2.2 Min Heap property #
+##  Min Heap property #
 In Min Heap, all the parent node keys are less than or equal to their child node keys. This goes without saying that the rule will apply to all children of the node. So the root node, in this case, will always contain the smallest element present in the Heap. If Node A has a child node B, then,
 
 <p align=center>
