@@ -5,6 +5,9 @@
 * [2.1 Max Heap Property:](#max-Heap-property)
 * [2.2 Min Heap Property:](#min-Heap-property)
 * [3. Heap Representation in Arrays](#Heap-Representation-in-Arrays)
+* [4. Implementation](#Implementation)
+* [4.1 Explanation](#explanation)
+* [4.2 Complexity](#Complexity)
 ## What is a Heap
 A brief introduction to Heaps and their uses. We will also look at Heap Property and how a Heap is represented on an array.
 ## Introduction #
@@ -109,3 +112,96 @@ In the figure above, you can see that all of the parent nodes are present in the
 
 
 In the next chapter, we will take a detailed look at Max Heap and see how it is different from Min Heap.
+
+## Implementation #
+Now that we have discussed the important Max Heap functions, let’s move on to implementing them in Java.
+
+```
+import java.util.Arrays;
+
+class Heap {
+ 
+	private void maxHeapify(int[] heapArray, int index, int heapSize){
+		int largest = index;
+		while (largest < heapSize / 2){      // check parent nodes only     
+			int left = (2 * index) + 1;       //left child
+			int right = (2 * index) + 2;      //right child
+      
+			if (left < heapSize && heapArray[left] > heapArray[index]){
+				largest = left; 			
+      		}
+			if (right < heapSize && heapArray[right] > heapArray[largest]){
+				largest = right;
+			}
+			if (largest != index){ // swap parent with largest child 
+				int temp = heapArray[index];
+				heapArray[index] = heapArray[largest];
+				heapArray[largest] = temp;
+				index = largest;
+			}
+      		else 
+				break; // if heap property is satisfied 
+		} //end of while
+	} 
+	public void buildMaxHeap(int[] heapArray, int heapSize) 
+  	{
+   	// swap largest child to parent node 
+		for (int i = (heapSize - 1) / 2; i >= 0; i--){
+			maxHeapify(heapArray, i, heapSize);
+		}
+	}
+	
+	public static void main(String[] args) {
+		int[] heapArray = { 1, 4, 7, 12, 15, 14, 9, 2, 3, 16 };
+		
+		System.out.println("Before heapify: "+Arrays.toString(heapArray));		
+		new Heap().buildMaxHeap(heapArray, heapArray.length);
+		System.out.println("After heapify: "+Arrays.toString(heapArray));		
+	}
+}
+```
+
+## Explanation #
+This code covers all the cases that we discussed in the previous chapter. Let’s look at each function one by one and see what’s going on:
+
+**BuildHeap()**: It takes the array and starts from the last child node at the last level, then passes it to MaxHeapify for comparison.
+
+**MaxHeapify()**: This function takes the node value and compares it with the key at the parent node, and swaps them if the condition below stands true.
+
+<p align=center>
+  ChildNode>=ParentNode
+</p> 
+
+The while loop makes sure that the nodes keep swapping until the Heap property is satisfied, so we basically call MaxHeapify(); at each small level to achieve Max Heap.
+
+### If this Code had a Face #
+<p align=center>
+  <img width=700 height=550 src="https://github.com/ravi26067/Coding/blob/master/DS/Heap/source/output_GueqZG.gif">
+</p>
+
+## Time Complexity #
+The worst-case time complexity of maxHeapify() is O(lgn)O(lgn) because we start with the rightmost leaf node in the heap, then move left and then up until we reach the root node.
+
+In buildMaxHeap(), the heapify function is called O(n)O(n) times. Therefore, the overall time complexity of building a Heap seems to be O(n(lgn))O(n(lgn)), but this is a very loose upper bound. A more accurate and tight upper-bound for the build heap operation is O(n)O(n). Let me explain how we can calculate this.
+
+The heapify function has different time complexity at each level of the tree i.e it will be O(1)O(1) at the leaf node and O(lg(n))O(lg(n)) at the root. So, the worst-case time complexity of heapify at each node is O(h)O(h) where hh is the height of the node in the heap. The number of nodes for any binary given tree with height h is given by {n}/{2^h + 1}.
+According to these measures, the total complexity can be calculated by the following expression:
+
+<p align=center>
+  <img width=200 height=200 src="https://github.com/ravi26067/Coding/blob/master/DS/Heap/source/heap_equation.png">
+</p>
+
+When the above summation approaches \infty∞, it converges to 22. The expression thus becomes:
+
+<p align=center>
+  ⇒O(n×2)
+</p> 
+<p align=center>
+  ⇒O(n)
+</p> 
+
+Hence, the time complexity of building a heap is O(n)O(n)
+
+You see, just with the help of two simple functions, we have implemented a whole data structure.
+
+And now that we have covered Max Heap, implementing a Min Heap will not be a problem. So, that’s what we are going to study in the next lesson. See you!
