@@ -2,8 +2,9 @@
 * [Introduction](#Introduction)
 * [1. Complete Binary Tree](#complete-Binary-Tree)
 * [2. Heap Property](#heap-property)
-* [2.1 Max Heap Property:](#max-Heap-property)
-* [2.2 Min Heap Property:](#min-Heap-property)
+* [2.1 Max Heap Property:](#2.1 max-Heap-property)
+* [2.2 Min Heap Property:](#2.2 min-Heap-property)
+* [3. Heap Representation in Arrays](#Heap-Representation-in-Arrays)
 ## What is a Heap
 A brief introduction to Heaps and their uses. We will also look at Heap Property and how a Heap is represented on an array.
 ## Introduction #
@@ -22,7 +23,7 @@ There is also a common misconception that the elements of a Heap are sorted. The
 Moreover, this Data Structure Heap has nothing to do with the dynamic memory allocations on a Heap in various languages like C/C++ and Pascal.
 
 
-## 1. Complete Binary Tree #
+## Complete Binary Tree #
 As discussed in the previous chapter, a Complete Binary Tree is a tree where each node has a max. of two children and nodes at all levels are completely filled (except the leaf nodes). But the nodes at the last level must be structured in such a way that the left side is never empty. This is the only condition that differentiates Complete Binary Trees from other trees.
 
 The new elements are inserted from left to right. When you add a new node, you must make sure that the left child of that intermediate parent node is filled. If it’s not, add a node at the left and insert the new element there.
@@ -80,3 +81,31 @@ Following operations can be performed on a heap:
 * Remove min/max: It has O(1)O(1) time complexity.
 
 In each of the following lessons, you will tackle problems involving binary heaps. Check the implementation approach used in the lesson and write your solution accordingly.
+
+##  Heap Representation in Arrays
+The lesson elaborates how to Use Arrays for the Implementation of Heaps.
+
+Heaps can be implemented using Arrays. The contents of a heap with n nodes are stored in such a way that all the parent nodes occur in the first half of array (n/2), while the leaves are present at the last n/2 positions. So the last parent will be at the n/2th position.
+
+The node at the kth position will have its children placed as follows:
+* The Left child at 2k+1.
+* The Right child at 2k+2.
+
+See the figure below to see how nodes are mapped on the array:
+
+<p align=center>
+  <img width=700 height=600 src="https://github.com/ravi26067/Coding/blob/220911eea0b914e5bcebc61233b81b19d0615604/DS/Heap/source/HeapRepresentation.png">
+</p>
+
+In the figure above, you can see that all of the parent nodes are present in the first half of the array, with the last parent at the n/2th position (i.e. 4th index), whereas the children nodes appear on the second half. The following properties also hold:
+
+<p align=center>
+  LeftChild=2k+1
+</p>
+<p align=center>
+  RightChild=2k+2
+</p>
+
+
+
+In the next chapter, we will take a detailed look at Max Heap and see how it is different from Min Heap.
