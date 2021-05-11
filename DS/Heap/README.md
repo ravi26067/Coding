@@ -1,6 +1,33 @@
 # Heap
+* [Introduction](#Introduction)
+* [1. Complete Binary Tree]
+* [2. Heap Property](#heap_property)
+* [2.1 Max Heap Property:]
+* [2.2 Min Heap Property:]
+## What is a Heap
+A brief introduction to Heaps and their uses. We will also look at Heap Property and how a Heap is represented on an array.
 ## Introduction #
 **Heaps** are a data structure primarily used for efficiently finding the smallest or largest element in an array. Heaps are advanced data structures based on Binary Trees, which is why they are commonly known as **Binary Heaps**.
+
+Heaps are implemented through Arrays, where each element of the array corresponds to a node in the binary tree and the value inside the node is called a “key”. Heaps can also be implemented using trees with a node class and pointers, but it’s usually easier and more space efficient to use an array.
+
+All the nodes are ordered according to the rules listed below:
+
+A Heap tree must be a Complete Binary Tree.
+The nodes must be ordered according to the Heap Property.
+
+### **Common Misconception** ###
+There is also a common misconception that the elements of a Heap are sorted. They are not at all sorted; in fact, the only key feature of a Heap is that the largest or smallest element is always placed at the top (parent node) depending on what kind of Heap we are using.
+
+Moreover, this Data Structure Heap has nothing to do with the dynamic memory allocations on a Heap in various languages like C/C++ and Pascal.
+
+
+## 1. Complete Binary Tree #
+As discussed in the previous chapter, a Complete Binary Tree is a tree where each node has a max. of two children and nodes at all levels are completely filled (except the leaf nodes). But the nodes at the last level must be structured in such a way that the left side is never empty. This is the only condition that differentiates Complete Binary Trees from other trees.
+
+The new elements are inserted from left to right. When you add a new node, you must make sure that the left child of that intermediate parent node is filled. If it’s not, add a node at the left and insert the new element there.
+
+A Heap uses Complete Binary Trees to avoid holes in the array. See the figure below to see the difference between that and an Incomplete Binary Tree:
 
 ## Implementation #
 Heaps are implemented through Arrays, where each element of the array corresponds to a node in the binary tree and the value inside the node is called a “key”. Heaps can also be implemented using trees with a node class and pointers, but it’s usually easier and more space efficient to use an array.
