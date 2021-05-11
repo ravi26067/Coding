@@ -1,9 +1,9 @@
 # Heap
 * [Introduction](#Introduction)
-* [1. Complete Binary Tree]
-* [2. Heap Property](#heap_property)
-* [2.1 Max Heap Property:]
-* [2.2 Min Heap Property:]
+* [1. Complete Binary Tree](#complete-Binary-Tree)
+* [2. Heap Property](#heap-property)
+* [2.1 Max Heap Property:](#max-Heap-property)
+* [2.2 Min Heap Property:](#min-Heap-property)
 ## What is a Heap
 A brief introduction to Heaps and their uses. We will also look at Heap Property and how a Heap is represented on an array.
 ## Introduction #
@@ -28,6 +28,12 @@ As discussed in the previous chapter, a Complete Binary Tree is a tree where eac
 The new elements are inserted from left to right. When you add a new node, you must make sure that the left child of that intermediate parent node is filled. If it’s not, add a node at the left and insert the new element there.
 
 A Heap uses Complete Binary Trees to avoid holes in the array. See the figure below to see the difference between that and an Incomplete Binary Tree:
+
+
+<p align=center>
+  <img width=700 height=300 src="https://github.com/ravi26067/Coding/blob/master/DS/Heap/source/completeBT.png">
+</p>
+
 
 ## Implementation #
 Heaps are implemented through Arrays, where each element of the array corresponds to a node in the binary tree and the value inside the node is called a “key”. Heaps can also be implemented using trees with a node class and pointers, but it’s usually easier and more space efficient to use an array.
