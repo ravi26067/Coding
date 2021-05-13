@@ -20,6 +20,22 @@ public class BstLca {
 	}
 	
 	
+	//This is leetcode solution
+	
+	public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+		if(root==p||root==q)
+		    return root;
+		if(root.val>p.val && root.val>q.val){
+		    return lowestCommonAncestor(root.left,p,q);
+		}else if(root.val<p.val && root.val<q.val){
+		    return lowestCommonAncestor(root.right,p,q);
+		}else{
+		    return root;
+		}
+	    }
+	
+	//This is GFG
+	
 	static Node LCA(Node root,int n1,int n2) {
 		
 		while(root!=null)
