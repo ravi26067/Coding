@@ -116,7 +116,7 @@ In the next chapter, we will take a detailed look at Max Heap and see how it is 
 ## Heap Implementation #
 Now that we have discussed the important Max Heap functions, let’s move on to implementing them in Java.
 
-```
+``` java
 import java.util.Arrays;
 
 class Heap {
