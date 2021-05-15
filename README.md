@@ -7,7 +7,7 @@ This module consists of various sections related to programming as well as for i
 * [coding](#coding-problems)
 
 # Algorithms
-|        Topic        |   Problem Statement     |   Solution  |
+|        Topic        |   Problem Statement     |   Solution    |
 |:------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------:|:------:|
 |DP|    Fabonacci series.                                                      |   [FabonacciNumber.java](https://github.com/ravi26067/Coding/blob/master/Algorithms/DP/FabonacciNumber.java "FabonacciNumber.java")   |
 |DP|    0-1 Knapsack problem .                                                      |   [KnapsackDp.java](https://github.com/ravi26067/Coding/blob/master/Algorithms/DP/KnapsackDp.java)   |
