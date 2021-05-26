@@ -7,6 +7,7 @@ class Solution {
         {
             return Integer.parseInt(tokens[0]);
         }
+        
         for(int i=0;i<tokens.length;i++){
             String c = tokens[i];
             if(c.length()==1 && (c.equals("+") || c.equals("-") || c.equals("/")||c.equals("*"))){
