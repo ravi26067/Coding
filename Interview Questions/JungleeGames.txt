@@ -1,0 +1,33 @@
+Round 1:
+HackerRank Question: 3 Coding Questions(DP, Strings and Matrix)
+
+Round 2:
+* Work related Questions Technologies and features
+* Given a linkedlist find the mid of Linkedlist, how do you find element in Linkedlist of 1M elements(You can manipulate 
+   linkedlist but can't use inbuilt things like map).
+* What is indexing?
+* How to implements threads? Which one to prefer?
+
+count = 0;//global variable 
+for(int i=0;i<1000;i++)
+  count++
+  
+  T1 and T2 will execute this code then what will be the output?
+
+* Garbage collertor in java and how it works?
+
+* OOPS Question
+Output of code with reason?
+
+Class A{
+  printM("print A")
+}
+
+Class B extends A{
+  printM("print B")
+}
+
+main(){
+  B obj = new A();
+  Sysout(obj.printM())
+}
