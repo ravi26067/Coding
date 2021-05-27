@@ -6,6 +6,7 @@ Round 2:
 * Given a linkedlist find the mid of Linkedlist, how do you find element in Linkedlist of 1M elements(You can manipulate 
    linkedlist but can't use inbuilt things like map).
 * What is indexing?
+* Have you worked on KAFKA, REDIS SQL and NOSQL Db?
 * How to implements threads? Which one to prefer?
 
 count = 0;//global variable 
