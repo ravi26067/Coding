@@ -1,6 +1,7 @@
 Round 1:
 HackerRank Question: 3 Coding Questions(DP, Strings and Matrix)
 
+
 Round 2:
 * Work related Questions Technologies and features
 * Given a linkedlist find the mid of Linkedlist, how do you find element in Linkedlist of 1M elements(You can manipulate 
