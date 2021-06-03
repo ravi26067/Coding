@@ -1,0 +1,11 @@
+Round 1: (Status Rejected)
+
+* What is immutable class? How do we implement that? In detail with some followup questions.
+* Internal structure of Hashmap? How do we implement hashcode and equals method?
+  follow up: if we have 
+  class Teacher{
+    String name;
+    }
+   If any two teacher object will have same name, it should overwrite in hashmap. Where do you override your equals method?
+* If you override in Teacher class, write the code.
+* Implement singleton pattern with handling the race conditions.
