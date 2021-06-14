@@ -1,0 +1,47 @@
+Round 1
+----------
+Basic intro with Cofounder, understanding the business and breif about your current work and work expectations
+
+
+Round 2 (Rejected)
+----------
+Taken by another Cofounder who was more focussed on giving the code scnarios and explanation.
+
+
+Q 1. The data is consistant or not? If not why? What can we do to avoid inconsistency? 
+
+class Controller {
+	
+
+	int api1(int id) {
+
+		syncronised{
+			Model m = repo.getMOdelById(id);
+			m.col1 = m.col1 * 2;
+			repo.save(m);
+		}
+
+		new Thread(() -> {
+			int updated = computValue(); // assume this takes a long time (100000s)
+
+			syncronised{
+				m = repo.getMOdelById(id);
+				m.col2 = updated;
+				repo.save(m);
+			}
+
+		}).start();
+
+		return m.col1;
+	}
+
+}
+
+
+Class Model {
+	int id;
+	int col1;
+	int col2;
+}
+
+		
