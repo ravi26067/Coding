@@ -1,6 +1,10 @@
+# Round 1 (Coding)
+
 Q1. https://leetcode.com/problems/permutations/
 
-CODE :
+CODE:
+
+``` java
 
 class Solution {
     public List<List<Integer>> permute(int[] nums) {
@@ -33,11 +37,14 @@ class Solution {
     }
 }
 
+```
 
 
 Q2. https://leetcode.com/problems/next-greater-element-i/
 
 CODE :
+
+``` java
 
 class Solution {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
@@ -81,3 +88,68 @@ class Solution {
     }
 }
 
+```
+# Round 2 ( LLD)
+
+Spinny Round-2
+
+**1. What are the scenarios for these api methods**
+GET , POST , PUT , PATCH
+
+Answer: you can search on internet
+
+**2. Given two table , print the OrderDate for Customer Antonio**
+
+Orders
+
+| OrderID	| CustomerID	| OrderDate	|
+|:---------:|:-------------:|:---------:|
+| 10308		| 2				| 1996-09-18|
+| 10309		| 37			| 1996-09-19|
+| 10310		| 77			| 1996-09-20|
+
+
+
+Customers
+
+|CustomerID	|	CustomerName							| ContactName		|	Country	|
+|:---------:|:-----------------------------------------:|:-----------------:|:---------:|
+|1			|	Alfreds Futterkiste						| Maria Anders		|	Germany	|
+|2			|	Ana Trujillo Emparedados y helados		| Ana Trujillo		|	Mexico	|
+|3			|	Antonio Moreno Taquería					| Antonio Moreno	|	Mexico	|
+
+
+Answer: 
+``` sql
+SELECT OrderDate from orders join customers on orders.customerID=customers.customerId where customers.ContactName like 'Antonio%'
+
+```
+
+**3. Low Level Design** 
+
+**Car Bidding system**
+
+``` text
+
+	Requirements
+	--------------
+
+	You will have a platform where you will have a list of cars on which bidding will be done.
+	User(Dealer) who will place the highest bid will win the bid.
+	Each user will have Wallet associated with them which contains some amount.They can place bid or may not place a bid bases on the wallet balance.
+	Also when new bid comes for the car, the latest bid which will be placed by user, his that much amount will get freezed until the new bid comes.
+	User should also be able to get the bid history.
+	
+	Extended Requirements
+	---------------------
+	User should also be able to get transaction history of the wallet
+
+	Make a low level design and use case for this
+
+	Main requiremet:
+	------------------
+	placeBid
+	get BidHistory For User
+	get Maximum Bid OnCar (amount)
+
+```
