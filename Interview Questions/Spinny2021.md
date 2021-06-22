@@ -246,6 +246,6 @@ Entity / DB Schema
 Type of database
 ```
 
-**3. What is the difference between spring framework and spring boot? **
+**3. What is the difference between spring framework and spring boot?**
 
 
