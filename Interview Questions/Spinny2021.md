@@ -153,3 +153,99 @@ SELECT OrderDate from orders join customers on orders.customerID=customers.custo
 	get Maximum Bid OnCar (amount)
 
 ```
+
+# Round 3 (HLD)
+
+**1. Difference between monolith and microservice architecture?**
+
+```
+	(Orchestrator)
+	Service A ---Service B **
+	If service B updating data of Microservice A, how will you update db of A (sync or async) and why?
+	Service A gets timeout
+	
+```
+
+**2. Design a book my show system**
+
+```
+Design BookMyShow
+
+Requirements
+----------------
+Search for shows
+He can book a ticket
+Book a seat for 10 mins or so
+User gets nearby theatres
+
+
+System Requirements Clarification
+Movie catalog service
+100 req/sec = 60*100 /min
+
+Assumptions
+Lat long for location
+
+
+
+
+Microservices
+	
+	User service
+	Search service 
+	Theater service
+	Inventory service
+	Movie service 
+Booking Service
+
+
+
+Interaction
+Entity / DB Schema
+
+	User 
+	Id
+	password
+	Name 
+	Address
+	Location
+	
+	Theater
+	Id
+	Location
+	Address
+	Screen
+	Movies
+	
+	Screen
+	-------
+	Shows
+	Seats
+
+	Seats
+	--------
+	No
+	Available
+
+	Movie
+	--------
+	Id
+	Name
+	Description
+	releaseDate
+
+	Booking
+	Id;
+	Movie name
+	User
+	Duration
+	Transaction details
+	
+	
+
+Type of database
+```
+
+**3. What is the difference between spring framework and spring boot? **
+
+
