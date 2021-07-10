@@ -1,9 +1,10 @@
 Round 1: Problem Solving
 
-Problem :- https://leetcode.com/problems/daily-temperatures/
+**Problem** :- https://leetcode.com/problems/daily-temperatures/
 
 Solution :- 
 
+``` java
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
         
@@ -26,3 +27,5 @@ class Solution {
         return answer;
     }
 }
+
+```
