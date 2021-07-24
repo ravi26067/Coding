@@ -248,7 +248,7 @@ class LRUCache{
 }
 
 ```
-**Q3.Quesitons on java like java.**
+**Q3.Quesitons based on java.**
 * What is String pool?
 * What is executor service? Difference between submit() and execute() method?
 * Comparator vs Comparble?
