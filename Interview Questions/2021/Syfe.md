@@ -50,3 +50,83 @@ class Solution {
 
 ```
 
+## Round 3 : System Design
+
+**Problem**: Google Calender
+
+
+FR
+
+1.Create Event (
+	Fixed event {datetime,duration}, 
+	Recuring Event{daily,alternate monday}
+
+	)
+
+2.Send Email Notification 
+before 30 mins send event to user
+
+
+USerService
+EventService
+NotificationService
+
+
+
+
+
+USer{
+
+}
+
+
+Event{
+	List<userid>;
+	startDate;
+	startTime;
+	duration;
+	Recuring recurring;
+}
+
+Recuring{
+	int count;
+	Month month;
+	Day day;
+	Year year;
+}
+
+Week{
+	int weekCount;
+	List<Days> days;
+}
+
+Month{
+	int dayNumber;
+	Week week;
+}
+
+
+Year{
+	
+}
+
+Day{
+}
+
+
+Sunday{
+
+}
+
+Monday{
+
+}
+
+
+Calender{
+	Days
+	Month
+	Year
+	Hours
+}
+
