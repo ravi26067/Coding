@@ -104,3 +104,8 @@ Return true;
 }
 
 ```
+
+## Round 2 (Machine Coding)
+
+**Q.Design a system like SQL with insert delete update of table.**
+
