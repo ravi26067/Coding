@@ -129,4 +129,38 @@ Calender{
 	Year
 	Hours
 }
+	
+``` sql
+Meeting
+
+MeetingId 
+Created time
+ScheduleType Daily,Weekly,Monthly,Year
+EndType
+recurance
+weekday
+monthDay
+weekCount
+maxoccurances
+enddate
+
+
+meeting_user
+meeting_id
+user_id
+
+
+
+
+
+Meeting{
+	users{
+		uids
+	}
+}
+
+
+createCalender()
+	
+```
 
