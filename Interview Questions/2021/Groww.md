@@ -109,3 +109,88 @@ Return true;
 
 **Q.Design a system like SQL with insert delete update of table.**
 
+## Round 3 (System Design)
+
+**Q. Design a system like swiggy.**
+
+``` sql
+
+Requirements
+
+Functinal 
+
+Search restraunt/food item
+Select item and place order
+Add it cart
+Order status
+Payment
+
+
+Non functonal 
+-------
+Highly Avl
+Handle the scale
+Stable
+
+
+
+
+Db design
+-----------
+
+
+User
+
+id
+name
+address
+
+
+restraunt
+-name
+-location
+-type
+-list<Dishes>
+
+
+Dishes
+name
+price
+List<ingredients>
+
+
+Cart
+
+id
+status
+totalPrice
+List<Dishes>
+
+Order
+
+id
+status
+restraunt
+totalPrice
+List<Dishes>
+payment
+
+
+
+OrderStatus
+
+Placed, cancelled, PaymentFailed
+
+
+
+Payment
+
+id
+amount
+mode of payment
+```
+
+### Diagram
+
+![image](https://user-images.githubusercontent.com/17096338/130417552-4c7f34f0-354f-4f3c-8b6c-b480d98ca251.png)
+
