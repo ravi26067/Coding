@@ -162,5 +162,5 @@ Stacks are an integral part of many algorithms and are used in a wide range of a
 
 
 <div align="right" style="position: absolute; bottom: 10px; right: 10px;">
-   <a href="https://google.com" style="color: transparent; text-decoration: none;">Next</a>
+   <a href="https://github.com/ravi26067/Coding/blob/master/DS/Stack/Go/stack.go" style="color: transparent; text-decoration: none;">Next</a>
 </div>
