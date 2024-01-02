@@ -64,3 +64,8 @@ size():
 ```
 
 Stacks are an integral part of many algorithms and are used in a wide range of applications due to their simplicity and efficiency. They provide a structured way to manage data and control the flow of execution in various computational processes.
+
+
+<div align="right" style="position: absolute; bottom: 10px; right: 10px;">
+   <a href="https://google.com" style="color: transparent; text-decoration: none;">Next</a>
+</div>
