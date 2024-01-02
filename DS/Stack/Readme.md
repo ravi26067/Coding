@@ -63,6 +63,101 @@ size():
    return Top + 1
 ```
 
+Here's the pseudo-code for a stack implementation using dynamic memory with explanations:
+
+```plaintext
+# Stack Node Structure
+---------------------
+struct Node {
+    data: integer
+    next: Node pointer
+}
+
+# Stack Implementation
+---------------------
+struct Stack {
+    top: Node pointer
+}
+
+# Initialization
+---------------
+Stack* initializeStack():
+    newStack = allocate memory for Stack
+    newStack.top = NULL
+    return newStack
+
+# Push operation
+---------------
+push(stack, element):
+    newNode = allocate memory for Node  # Allocate memory for a new node
+    newNode.data = element  # Set the data of the new node to the given element
+    newNode.next = stack.top  # Point the new node to the current top of the stack
+    stack.top = newNode  # Update the top of the stack to the new node
+
+# Pop operation
+--------------
+pop(stack):
+    if stack.top is NULL:
+        print "Stack underflow"
+        return NULL
+
+    poppedNode = stack.top  # Retrieve the current top of the stack
+    poppedElement = poppedNode.data  # Get the data of the top node
+    stack.top = poppedNode.next  # Update the top of the stack to the next node
+    free memory for poppedNode  # Free the memory occupied by the popped node
+    return poppedElement
+
+# Peek operation
+---------------
+peek(stack):
+    if stack.top is NULL:
+        print "Stack is empty"
+        return NULL
+
+    return stack.top.data  # Return the data of the top node without popping
+
+# IsEmpty operation
+-------------------
+isEmpty(stack):
+    return (stack.top == NULL)  # Check if the stack is empty based on the top pointer
+
+# Size operation
+----------------
+size(stack):
+    count = 0
+    current = stack.top
+    while current is not NULL:
+        count++
+        current = current.next
+    return count
+
+# PrintStack operation
+-----------------------
+printStack(stack):
+    if stack.top is NULL:
+        print "Stack is empty"
+        return
+
+    print "Stack:"
+    current = stack.top
+    while current is not NULL:
+        print current.data
+        current = current.next
+    print "-------"
+```
+
+Explanation:
+
+- **Node Structure:** Defines the structure for a node in the stack. Each node contains data and a pointer to the next node.
+- **Stack Structure:** Defines the structure for the stack, with a pointer to the top node.
+- **Initialization:** Initializes an empty stack by allocating memory for the stack and setting the top pointer to `NULL`.
+- **Push Operation:** Adds a new node with the given element to the top of the stack.
+- **Pop Operation:** Removes and returns the top element of the stack, handling underflow conditions.
+- **Peek Operation:** Returns the top element of the stack without removing it, handling empty stack conditions.
+- **IsEmpty Operation:** Checks if the stack is empty by verifying if the top pointer is `NULL`.
+- **Size Operation:** Counts and returns the number of elements in the stack.
+- **PrintStack Operation:** Prints the elements of the stack from top to bottom, handling the case where the stack is empty.
+
 Stacks are an integral part of many algorithms and are used in a wide range of applications due to their simplicity and efficiency. They provide a structured way to manage data and control the flow of execution in various computational processes.
 
 
