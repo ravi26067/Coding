@@ -82,4 +82,4 @@ print_x()  # This prints the value of x, which is 10
 Functions in Python help encapsulate logic, promote reusability, and improve code readability by breaking down complex tasks into smaller, manageable pieces.
 
 <div align="left" style="position: absolute;"><a href="control_structure.md"><button>Previous</button></a></div>
-<div align="right" style="position: absolute;"><a href="functions.md"><button>Next</button></a></div>
+<div align="right" style="position: absolute;"><a href="tuples_lists.md"><button>Next</button></a></div>
