@@ -38,6 +38,42 @@ These operators compare the memory locations of two objects.
 - **`is`:** Returns `True` if both operands refer to the same object.
 - **`is not`:** Returns `True` if both operands do not refer to the same object.
 
+In Python, identity operators are used to compare the memory locations of two objects to determine whether they are the same object or not. Python has two identity operators: `is` and `is not`.
+
+### 1. `is` Operator:
+The `is` operator checks if two variables refer to the same object in memory.
+
+- **Syntax:** `x is y`
+
+```python
+a = [1, 2, 3]
+b = a  # Both 'a' and 'b' refer to the same list in memory
+
+print(a is b)  # Output: True
+print(a is not b)  # Output: False
+
+c = [1, 2, 3]
+print(a is c)  # Output: False (Different objects in memory)
+```
+
+### 2. `is not` Operator:
+The `is not` operator checks if two variables do not refer to the same object in memory.
+
+- **Syntax:** `x is not y`
+
+```python
+x = 5
+y = 5
+
+print(x is not y)  # Output: False (Same memory location for integer 5)
+
+list1 = [1, 2, 3]
+list2 = [1, 2, 3]
+
+print(list1 is not list2)  # Output: True (Different objects in memory)
+```
+
+
 ### 6. Membership Operators:
 These operators test for membership in a sequence (e.g., strings, lists, tuples).
 
