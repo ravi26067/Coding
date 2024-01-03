@@ -67,10 +67,7 @@ a = 5; b = 10  # Two statements on the same line
 
 Understanding and practicing these fundamental elements will lay a strong foundation for writing Python code. The emphasis on indentation encourages readability and forces a consistent coding style, which is a significant aspect of Python's syntax.
 
-<div align="left" style="position: absolute; bottom: 10px; right: 10px;">
-   <a href="https://github.com/ravi26067/Coding/blob/master/Python/Readme.md" style="color: transparent; text-decoration: none;">Next</a>
+<div style="overflow: hidden; margin-bottom: 20px;">
+  <div style="float: left;"><a href="../Readme.md"><button>Previous</button></a></div><div style="float: right;"><a href="next_page.md"><button>Next</button></a></div>
 </div>
 
-<div align="right" style="position: absolute; bottom: 10px; right: 10px;">
-   <a href="https://github.com/ravi26067/Coding/blob/master/Python/tutorial/basic_syntax.md" style="color: transparent; text-decoration: none;">Next</a>
-</div>
