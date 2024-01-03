@@ -90,4 +90,4 @@ while num < 5:
 Understanding and using these control structures in Python allows you to conditionally execute code or iterate through sequences efficiently, controlling the flow of your programs based on specific conditions or requirements.
 
 <div align="left" style="position: absolute;"><a href="operators.md"><button>Previous</button></a></div>
-<div align="right" style="position: absolute;"><a href="control_structure.md"><button>Next</button></a></div>
+<div align="right" style="position: absolute;"><a href="functions.md"><button>Next</button></a></div>
