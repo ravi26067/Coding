@@ -80,4 +80,4 @@ Python has various built-in data types:
 Python's flexibility with variables and data types makes it easy to work with different kinds of data, allowing for dynamic and versatile programming. Understanding these fundamentals is crucial for effective coding and data manipulation in Python.
 
 <div align="left" style="position: absolute;"><a href="basic_syntax.md"><button>Previous</button></a></div>
-<div align="right" style="position: absolute;"><a href="variables.md"><button>Next</button></a></div>
+<div align="right" style="position: absolute;"><a href="operators.md"><button>Next</button></a></div>
