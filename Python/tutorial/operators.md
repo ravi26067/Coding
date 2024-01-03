@@ -47,4 +47,4 @@ These operators test for membership in a sequence (e.g., strings, lists, tuples)
 Understanding and using these operators effectively is essential for performing various operations and comparisons within Python code. They allow for concise and efficient manipulation of data and control flow in programs.
 
 <div align="left" style="position: absolute;"><a href="variables.md"><button>Previous</button></a></div>
-<div align="right" style="position: absolute;"><a href="variables.md"><button>Next</button></a></div>
+<div align="right" style="position: absolute;"><a href="control_structure.md"><button>Next</button></a></div>
