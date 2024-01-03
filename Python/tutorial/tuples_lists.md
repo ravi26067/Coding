@@ -92,4 +92,4 @@ my_dict = {'name': 'Alice', 'age': 30, 'city': 'New York'}
 Understanding these data structures is essential for effectively storing and manipulating data in Python, enabling you to choose the appropriate structure based on your requirements for mutability, order, and uniqueness of elements.
 
 <div align="left" style="position: absolute;"><a href="functions.md"><button>Previous</button></a></div>
-<div align="right" style="position: absolute;"><a href="tuples_lists.md"><button>Next</button></a></div>
+<div align="right" style="position: absolute;"><a href="package.md"><button>Next</button></a></div>
