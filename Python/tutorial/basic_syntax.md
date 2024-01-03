@@ -69,6 +69,6 @@ Understanding and practicing these fundamental elements will lay a strong founda
 
 
 <div align="left" style="position: absolute;"><a href="../Readme.md"><button>Previous</button></a></div>
-<div align="right" style="position: absolute;"><a href="basic_syntax.md"><button>Next</button></a></div>
+<div align="right" style="position: absolute;"><a href="variables.md"><button>Next</button></a></div>
 
 
