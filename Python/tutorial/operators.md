@@ -80,7 +80,7 @@ These operators test for membership in a sequence (e.g., strings, lists, tuples)
 - **`in`:** Returns `True` if a value is present in the sequence.
 - **`not in`:** Returns `True` if a value is not present in the sequence.
 
-Certainly! Membership operators in Python are used to test if a sequence (such as a string, list, tuple, or dictionary) contains a specific value. Python has two membership operators: `in` and `not in`.
+Membership operators in Python are used to test if a sequence (such as a string, list, tuple, or dictionary) contains a specific value. Python has two membership operators: `in` and `not in`.
 
 ### 1. `in` Operator:
 The `in` operator checks if a value exists in a sequence.
