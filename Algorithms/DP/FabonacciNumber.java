@@ -3,6 +3,7 @@ package com.dynamicprogramming;
 import java.util.Scanner;
 
 public class FabonacciNumber {
+
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
