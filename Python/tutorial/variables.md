@@ -38,7 +38,7 @@ Python has various built-in data types:
     complex_num = 2 + 3j
     ```
 
-2. **Strings:**
+2. **[Strings:](https://github.com/ravi26067/Coding/blob/master/Python/tutorial/strings.md)**
     - Ordered sequence of characters enclosed in single or double quotes.
 
     ```python
