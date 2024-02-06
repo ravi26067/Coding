@@ -7,7 +7,6 @@ This module consists of various sections related to programming as well as for i
 * [Java](#java)
 * [coding](#coding-problems)
 
-
 # Algorithms
 |        Topic        |   Problem Statement     |   Solution    |
 |:------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------:|:------:|
