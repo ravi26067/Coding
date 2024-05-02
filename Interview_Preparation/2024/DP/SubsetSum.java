@@ -1,5 +1,6 @@
 class Solution{
 
+    //https://www.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1
     static Boolean isSubsetSum(int N, int arr[], int sum){
         // code here
         boolean t[][] = new boolean[N+1][sum+1];
