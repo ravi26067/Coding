@@ -1,3 +1,4 @@
+//https://www.geeksforgeeks.org/problems/partitions-with-given-difference/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
 class Solution {
     public static int countPartitions(int n, int d, int[] arr) {
         int sum = 0;
