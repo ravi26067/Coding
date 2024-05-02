@@ -1,4 +1,6 @@
 // https://leetcode.com/problems/target-sum/
+// This is exactly similar to subset with given difference  https://github.com/ravi26067/Coding/blob/master/Interview_Preparation/2024/DP/SubsetGivenDifference.java
+
 func findTargetSumWays(nums []int, target int) int {
     
     n:= len(nums)
