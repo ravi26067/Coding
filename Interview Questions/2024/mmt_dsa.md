@@ -1,4 +1,6 @@
-# Problem Statement: Store Opening Hours
+# MMT DSA Round (Rejected)
+
+## Problem Statement: Store Opening Hours
 
 You are given two arrays representing the opening and closing hours of a store for each day of the week. You need to process this data and generate the store's opening hours for each day in a human-readable format, considering the following conditions:
 
