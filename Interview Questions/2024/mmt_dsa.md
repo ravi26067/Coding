@@ -43,4 +43,65 @@ close_hours = [1700,1600,1600,1600,1600,1200,800]
 **Note:**
 - Assume that the opening and closing hours are represented in a 24-hour format (e.g., 900 for 9:00 AM, 1700 for 5:00 PM).
 
----
+**Solution:**
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	open := []int{900, 1000, 1000, 1000, 2700, 1200, 800}
+	close := []int{1700, 1600, 1600, 1600, 1600, 1200, 800}
+
+	days := []string{"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"}
+
+	l:=len(open)
+
+	res:= make([]string,0)
+
+	
+	for i:=range (l){
+		if open[i]==close[i]{
+			res=append(res,"Open 24 Hours")
+		}else if open[i]>close[i]{
+			res=append(res,"Closed")
+		}else{
+			res=append(res,fmt.Sprintf("%d-%d",open[i],close[i]))
+		}
+	}
+
+	key:=""
+	for i:=range (l){
+		
+		if i==0{
+			if res[i]==res[i+1]{
+				key+=days[i] + "-"
+			}else{
+				fmt.Printf("%s:%s\n",days[i],res[i])
+			}
+		}else if i==l-1{
+			if res[i] == res[i-1]{
+				key+= days[i]
+				fmt.Printf("%s:%s\n",key,res[i])
+			}else{
+
+			}
+		}else{
+			if res[i] == res[i-1]&&res[i]==res[i+1]{
+				
+			}else if res[i] == res[i-1]{
+				key+= days[i]
+				fmt.Printf("%s:%s\n",key,res[i])
+			}else if res[i]==res[i+1]{
+				key+=days[i] + "-"
+			}else{
+				key=""
+				fmt.Printf("%s:%s\n",days[i],res[i])
+			}
+		}
+	}
+
+}
+```
