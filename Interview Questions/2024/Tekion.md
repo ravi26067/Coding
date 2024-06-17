@@ -34,8 +34,14 @@
          }
      }
      ```
+     
+5. **Deep copy and shallow copy in Java. Explain in detail.**
+   - **Shallow Copy:** Copies references to objects, meaning changes to copied object affect the original.
+   - **Deep Copy:** Copies object values into another, ensuring changes in copied object do not affect the original.
 
-5. **Coding Question: Find out the username who have browsed the most number of times within a time frame of n seconds.**
+
+
+6. **Coding Question: Find out the username who have browsed the most number of times within a time frame of n seconds.**
 
    **Input:**
    ```json
