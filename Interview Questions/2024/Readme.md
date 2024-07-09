@@ -9,4 +9,4 @@
 | 5     | [Probo](https://github.com/ravi26067/Coding/blob/master/Interview%20Questions/2024/Probo.md) | Software Engineer | 04,10 June 2024 | $${\color{red}Rejected}$$ |
 | 6     | [Wayfair](https://github.com/ravi26067/Coding/blob/master/Interview%20Questions/2024/Wayfair.md) | Senior Software Engineer | 12, 14 June 2024 | $${\color{red}Rejected}$$ |
 | 7     | [Tekion](https://github.com/ravi26067/Coding/blob/master/Interview%20Questions/2024/Tekion.md) | Staff Software Engineer | 17 June 2024 | $${\color{red}Rejected}$$ |
-| 8     | [Telus International AI](https://github.com/ravi26067/Coding/blob/master/Interview%20Questions/2024/TelusInternational.md)  | SDE 3 | 04,18,21 June 2024 | $${\color{green}Selected}$$ |
+| 8     | [Telus International AI](https://github.com/ravi26067/Coding/blob/master/Interview%20Questions/2024/TelusInternational.md)  | SDE 3 | 04,18,21 June 2024 | $${\color{green}Offered}$$ |
